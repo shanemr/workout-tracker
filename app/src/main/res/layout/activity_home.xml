@@ -17,73 +17,81 @@
         <TextView
             android:id="@+id/start_workout"
             style="@style/icon_description_text"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="156dp"
+            android:layout_marginTop="56dp"
             android:fontFamily="@font/open_sans_bold"
             android:text="@string/start_workout"
             android:textColor="#CC1662"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/workout_icon" />
 
         <TextView
             android:id="@+id/hello_train"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
             android:fontFamily="@font/lato_bold"
             android:text="@string/hello_user"
             android:textColor="#CC1662"
             android:textSize="46sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124" />
 
         <TextView
             android:id="@+id/text_log"
             style="@style/icon_description_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="245dp"
             android:fontFamily="@font/open_sans_bold"
             android:text="@string/workout_log"
             android:textColor="#CC1662"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.124"
+            app:layout_constraintHorizontal_bias="0.115"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/icon_workout_log"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.221" />
 
         <TextView
             android:id="@+id/text_stats"
             style="@style/icon_description_text_final"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
             android:layout_marginTop="64dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/open_sans_bold"
             android:text="@string/workout_stats"
             android:textColor="#CC1662"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.119"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/icon_stats" />
+            app:layout_constraintTop_toTopOf="@+id/icon_stats"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/text_template"
             style="@style/icon_description_text_final"
-            android:layout_marginTop="68dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="24dp"
             android:fontFamily="@font/open_sans_bold"
             android:text="@string/workout_routine_template"
             android:textColor="#CC1662"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/icon_stats" />
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/icon_stats"
+            app:layout_constraintVertical_bias="0.011" />
 
         <TextView
             android:id="@+id/text_profile"
             style="@style/icon_description_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="156dp"
             android:fontFamily="@font/open_sans_bold"
             android:text="@string/my_profile"
             android:textColor="#CC1662"
@@ -91,21 +99,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/icon_profile"
-            app:layout_constraintVertical_bias="0.839" />
+            app:layout_constraintVertical_bias="0.295" />
 
         <ImageView
             android:id="@+id/icon_stats"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginBottom="400dp"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:contentDescription="@string/stats_icon"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.407"
             app:srcCompat="@drawable/border_clear_white_48dp" />
 
         <TextView
@@ -113,7 +122,6 @@
             style="@style/icon_description_text_final"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="245dp"
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="@font/open_sans_bold"
@@ -121,37 +129,36 @@
             android:textColor="#CC1662"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.906"
+            app:layout_constraintHorizontal_bias="0.886"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/icon_record_weight"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.231" />
 
         <ImageView
             android:id="@+id/workout_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="24dp"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:clickable="true"
             android:contentDescription="@string/weight_icon"
             android:focusable="true"
             android:onClick="dff"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/hello_train"
+            app:layout_constraintTop_toBottomOf="@+id/hello_train"
+            app:layout_constraintVertical_bias="0.085"
+            app:layout_constraintVertical_chainStyle="spread_inside"
             app:srcCompat="@drawable/fitness_center_white_48dp" />
 
         <ImageView
             android:id="@+id/icon_record_weight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="56dp"
-            android:layout_marginBottom="270dp"
+            android:layout_marginEnd="@dimen/icon_margin_side"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:clickable="true"
@@ -160,36 +167,32 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/icon_workout_log"
-            app:layout_constraintTop_toBottomOf="@+id/text_weight"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_template"
+            app:layout_constraintVertical_bias="0.146"
             app:srcCompat="@drawable/accessibility_new_white_48dp" />
 
         <ImageView
             android:id="@+id/icon_workout_log"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="270dp"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:clickable="true"
             android:contentDescription="@string/log_workout_icon"
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_log"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/text_stats"
+            app:layout_constraintVertical_bias="0.146"
             app:srcCompat="@drawable/menu_book_white_48dp" />
 
         <ImageView
             android:id="@+id/icon_profile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginEnd="100dp"
-            android:layout_marginBottom="190dp"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:clickable="true"
@@ -197,30 +200,35 @@
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/workout_icon"
-            app:layout_constraintVertical_bias="0.963"
+            app:layout_constraintTop_toTopOf="@+id/start_workout"
+            app:layout_constraintVertical_bias="0.562"
             app:srcCompat="@drawable/person_white_48dp" />
 
         <ImageView
             android:id="@+id/icon_template"
             android:layout_width="58dp"
             android:layout_height="62dp"
-            android:layout_marginEnd="56dp"
-            android:layout_marginBottom="400dp"
             android:background="@drawable/icon_border"
             android:backgroundTint="#231539"
             android:clickable="true"
             android:contentDescription="@string/template_icon"
+            android:focusable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/icon_stats"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/equalizer_white_48dp"
-            android:focusable="true" />
+            app:layout_constraintVertical_bias="0.412"
+            app:srcCompat="@drawable/equalizer_white_48dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
