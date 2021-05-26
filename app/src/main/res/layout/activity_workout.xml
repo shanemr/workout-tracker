@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#130B20"
+        android:orientation="vertical"
+        android:padding="@dimen/box_inset_layout_padding" >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/workout_page_header_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/or" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/workout_page_header_text"
+            android:layout_marginTop="5dp"
+            android:text="@string/exercise_name" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="35dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#CC1662"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/add_exercise_button" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#130B20"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".ui.login.LoginActivity">
+
+
+        <TextView
+            android:id="@+id/intro_message"
+            style="@style/headerStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_creation_message"
+            android:textAlignment="center"
+            android:textColor="#CC1662"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.742" />
+
+        <EditText
+            android:id="@+id/first_name"
+            style="@style/userInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints="@string/prompt_first_name"
+            android:background="@drawable/box_border"
+            android:ems="10"
+            android:hint="@string/prompt_first_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/last_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/last_name"
+            style="@style/userInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints="@string/prompt_last_name"
+            android:background="@drawable/box_border"
+            android:ems="10"
+            android:hint="@string/prompt_last_name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+        <EditText
+            android:id="@+id/height"
+            style="@style/userInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="30dp"
+            android:autofillHints="@string/height"
+            android:background="@drawable/box_border"
+            android:ems="10"
+            android:hint="@string/height"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/weight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_name" />
+
+        <EditText
+            android:id="@+id/weight"
+            style="@style/userInfoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="@string/weight"
+            android:background="@drawable/box_border"
+            android:ems="10"
+            android:hint="@string/weight"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        <CheckBox
+            android:id="@+id/inches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:checked="false"
+            android:fontFamily="sans-serif"
+            android:text="@string/inches"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/cm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        <CheckBox
+            android:id="@+id/cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="65dp"
+            android:text="@string/cm"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inches"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        <CheckBox
+            android:id="@+id/lbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:text="@string/lbs"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/kg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+        <CheckBox
+            android:id="@+id/kg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="65dp"
+            android:text="@string/kg"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lbs"
+            app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="168dp"
+            android:layout_height="73dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="#CC1662"
+            android:enabled="true"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/action_create_profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight"
+            app:layout_constraintVertical_bias="0.42" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

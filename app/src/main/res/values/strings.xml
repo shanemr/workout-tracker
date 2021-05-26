@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Workout App Beta</string>
+
+    <!-- Create profile page-->
+    <string name="profile_creation_message">Please fill out information to create profile</string>
+    <string name="prompt_first_name">First name</string>
+    <string name="prompt_last_name">Last name</string>
+    <string name="action_create_profile">Create Profile</string>
+    <string name="cm">cm</string>
+    <string name="weight">Weight</string>
+    <string name="lbs">lbs</string>
+    <string name="kg">kg</string>
+    <string name="height">Height</string>
+    <string name="inches">inches</string>
+    <string name="input_fields_empty">You must complete all fields before continuing</string>
+    <string name="invalid_number_format">You must enter a valid number for height and weight</string>
+    <string name="check_inch_or_cm">You must select inches or cm</string>
+    <string name="check_lbs_or_kg">You must select lbs or kg</string>
+
+    <!-- Login page-->
+    <string name="username_password">Log In</string>
+    <string name="action_login">login</string>
+    <string name="user_name">Username</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="password">Password</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- Create username and password page-->
+    <string name="username_create_password">Please create username and password</string>
+    <string name="action_create_login">Sign up</string>
+
+
+    <!-- Home Page -->
+    <string name="hello">Hello, Shane</string>
+    <string name="add_workout">Add Workout</string>
+    <string name="workout_routine_template">Workout Templates</string>
+    <string name="workout_stats">Workout Stats</string>
+    <string name="previous_workouts">Previous Workouts</string>
+    <string name="title_activity_un_pw">activity_un_pw</string>
+
+    <!-- New Home Page -->
+    <string name="start_workout">Start Workout</string>
+    <string name="workout_log">Workout Log</string>
+    <string name="record_weight">Record Weight</string>
+    <string name="my_profile">My Profile</string>
+
+
+    <!-- Home Menu-->
+    <string name="or">or</string>
+    <string name="exercise_name">Enter Exercise Name</string>
+    <string name="add_exercise_button">Add Exercise</string>
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_home_page">activity_home_page</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="sign_up">Sign up</string>
+    <string name="no_account">No Account?</string>
+    <string name="title_activity_create_account">ActivityCreateAccount</string>
+    <string name="menu">TODO</string>
+    <string name="menu_home">TODO</string>
+    <string name="hello_user">Hello User</string>
+    <string name="title_activity_workout_page">WorkoutPage</string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+    <string name="stats_icon">stats_icon</string>
+    <string name="weight_icon">weight_icon</string>
+    <string name="record_weight_icon">record_weight_icon</string>
+    <string name="log_workout_icon">log_workout_icon</string>
+    <string name="profile_icon">profile_icon</string>
+    <string name="template_icon">template_icon</string>
+
+</resources>
