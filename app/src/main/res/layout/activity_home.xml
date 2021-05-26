@@ -29,7 +29,7 @@
             android:id="@+id/hello_train"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="68dp"
             android:fontFamily="@font/lato_bold"
             android:text="@string/hello_user"
             android:textColor="#CC1662"
